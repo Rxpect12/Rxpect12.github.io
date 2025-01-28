@@ -3,14 +3,15 @@ body {
 }
   
 h1 {
-    color: #375e97;
+    color: hotpink;
     font-size: 2em;
     font-family: Georgia, "Times New Roman", Times, serif;
-    border-bottom: 1px solid #375e97;
+    border-bottom: 10px solid purple;
+    border-bottom-style: dotted;
 }
   
 h2 {
-    font-size: 1.5em;
+    font-style: italic;
 }
   
 .job-title {
@@ -19,9 +20,15 @@ h2 {
 }
   
 a:link, a:visited {
-    color: #fb6542;
+    color: green;
 }
   
 a:hover {
     text-decoration: none;
+}
+
+ul {
+    background-color: #eeeeee;
+    border: 5px solid purple;
+    padding: 10px;
 }
