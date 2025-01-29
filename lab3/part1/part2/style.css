@@ -1,3 +1,19 @@
 html {
     font-family: sans-serif;
 }
+
+div {
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    border: 1px solid rgb(208, 3, 3);
+    padding: 50px;
+    margin: auto;
+    justify-content: center;
+    line-height: 140px;
+    font-size: 1.125rem;
+    background-color: red;
+    color: white;
+    text-shadow: black;
+    border-radius: 15px;
+}
