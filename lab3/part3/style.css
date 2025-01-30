@@ -55,10 +55,10 @@
   }
 
   body {
-    line-height: 1.5;
+    line-height: 20px;
   }
 
-  p {
+  .p1 {
     text-indent: 20px;
   }
 
@@ -79,4 +79,27 @@
   a:hover {
     color: #B28E2E;
     text-decoration: none;
+    outline: none;
+  }
+
+  a:active {
+    color: #5C0F0F;
+    background-color: #F2D2D2;
+    padding: 2px 5px;
+    border-radius: 4px;
+  }
+
+  a.external-link::after {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-image: url('/lab3/part3/external-link-52.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+  }
+
+  li {
+    line-height: 15px;
   }
