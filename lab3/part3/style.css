@@ -46,105 +46,24 @@
 
   h1 {
     text-align: center;
-    font-size: 40px;
-    letter-spacing: 1.6px;
   }
 
-  html {
-    font-size: 10px;
+  html {  
+    font-size: 20px;
   }
 
-  body {
-    line-height: 20px;
-  }
-
-  a {
-    color: #A52A2A;
-    text-decoration: underline;
-  }
-
-  a:visited {
-    color: #6F1F1A;
-  }
-
-  nav li a:focus {
-    outline: 2px solid #9B1C1C;
-    text-decoration: none;
+  a:link {
+    color: #a66;
   }
 
   a:hover {
-    color: #B28E2E;
-    text-decoration: none;
-    outline: none;
-  }
-
-  a:active {
-    color: #5C0F0F;
-    background-color: #F2D2D2;
-    padding: 2px 5px;
-    border-radius: 4px;
-  }
-
-  a.external-link::after {
-    content: "";
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    background: url('/lab3/part3/external-link-52.png') no-repeat 100% 0;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: 5px;
-  }
-
-  li, a {
-    display: block;
-    line-height: 15px;
-    color: #000;
-    padding: 8px 16px;
     text-decoration: none;
   }
 
-  ul, ol {
-    margin: 1.6rem 0;
+  a:visited {
+    color: #a66;
   }
 
   ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-  }
-
-  ol {
-    list-style-type: lower-latin;
-  }
-
-  nav ul {
-    padding-left: 0;
-    margin-top: 0.8rem;
-  }
-
-  nav li {
-    list-style-type: none;
-    margin-bottom: 2rem;
-  }
-
-  nav ul li {
-    margin: 0 15px;
-    list-style-type: none;
-  }
-
-  nav li a {
-    color: #A52A2A;
-    text-decoration: none;
-    display: inline-block;
-    width: 100%; 
-    font-size: 2.5rem;
-    line-height: 3;
-    text-align: center;
-    font-size: 3rem;
-    text-align: center;
-    padding: 10px 15px;
-    border: 1px solid #a66;
+    list-style-type: square;
   }
