@@ -64,6 +64,45 @@
     color: #a66;
   }
 
+  a {
+    outline: none;
+  }
+  
+  a[href*="http"] {
+    padding-right: 19px;
+    background: url(external-link-52.png) no-repeat 100% 0;
+    background-size: 16px 16px;
+  }
+
   ul {
     list-style-type: square;
+  }
+
+  nav ul {
+    padding-left: 0;
+    margin-top: 0.9rem;
+  }
+
+  nav li {
+    list-style-type: none;
+    margin-bottom: 2rem;
+  }
+
+  nav li a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #a66;
+    line-height: 3;
+    text-decoration: none;
+  }
+
+  nav li a:focus, nav li a:hover {
+    color: white;
+    background: #a66;
+  }
+  
+  nav li a:active {
+    color: white;
+    background: black;
   }
