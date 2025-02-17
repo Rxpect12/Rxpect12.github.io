@@ -16,36 +16,20 @@ body {
     margin: 0 auto;
     max-width: 980px;
   }
-  
-  .grid {
-    margin: 0 auto;
-    padding: 0 20px;
-    max-width: 980px;
-  }
-  
-  nav ul {
-    background-color: #000;
-    padding: .5em;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-  }
 
   nav {
     position: sticky;
     top: 0;
-    z-index: 1000;
-    padding: 10px 0;
+    padding: .5em;
+    background-color: #000;
   }
 
-  nav li {
-    padding: 10px 20px;
-  }
-  
   nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    justify-content: space-between;
   }
   
   nav a {
@@ -61,12 +45,6 @@ body {
     display: grid;
     gap: 1px;
     grid-template-columns: 1fr 1fr;
-  }
-
-  .photos {
-    list-style: none;
-    margin: 0;
-    padding: 0;
   }
 
   .feature {
