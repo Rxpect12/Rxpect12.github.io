@@ -54,6 +54,14 @@ body {
     padding: .5em 1em;
   }
   
+  .photos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1px;
+    grid-template-columns: 1fr 1fr;
+  }
 
   .photos {
     list-style: none;
@@ -63,4 +71,6 @@ body {
 
   .feature {
       width: 200px;
+      float: left;
+      margin: 0 20px 20px 0;
   }
