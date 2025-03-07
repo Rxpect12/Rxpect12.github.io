@@ -1,21 +1,50 @@
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
 
-const pics = ["pic1.jpg", "pic2.jpg", "pic3.jpg", "pic4.jpg", "pic5.jpg"]
-const altpics = [pic1 = "Close up of eyes", pic2 = "Cool rock formation", pic3 = "Lavendar flowers", pic4 = "Egyptian art", pic5 = "Butterfly on a leaf"]
-
 const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
+let images = [
+    "./images/pic1.jpg",
+    "./images/pic2.jpg",
+    "./images/pic3.jpg",
+    "./images/pic4.jpg",
+    "./images/pic5.jpg"
+]
 
-/* Declaring the alternative text for each image file */
+let imageAlt = [
+    "Close up of eyes",
+    "Cool rock formation",
+    "Lavender flowers",
+    "Egyptian painting in pyramid",
+    "Butterfly on a leaf"
+]
 
-/* Looping through images */
+btn.addEventListener('click', () => darken(btn))
 
-const newImage = document.createElement('img');
-newImage.setAttribute('src', xxx);
-newImage.setAttribute('alt', xxx);
-thumbBar.appendChild(newImage);
+for (let i = 0; i < 5; i++){
+    const img = document.createElement("img")
+    img.setAttribute('id', images[i])
+    img.setAttribute('src', images[i]);
+    img.setAttribute('alt', imageAlt[i]);
+    img.addEventListener('click', () => foo(img.id))
+    thumbBar.appendChild(img)
+}
 
-/* Wiring up the Darken/Lighten button */
+function foo(e){
+    displayedImage.setAttribute('src', e)
+}
+
+function darken(button){
+    className = button.getAttribute('class')
+    if (className == "dark") {
+        button.setAttribute('class', 'light')
+        button.textContent = "Lighten"
+        overlay.style.backgroundColor = "rgb(0 0 0 / 50%)";
+    } else {
+        button.setAttribute('class', 'dark')
+        button.textContent = "Darken"
+        overlay.style.backgroundColor = "rgb(0 0 0 / 0%)"
+    }
+}
