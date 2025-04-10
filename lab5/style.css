@@ -51,7 +51,7 @@ p, li, table {
 
 /* || header layout */
 
-div[class="nav"], article, footer, .secondary {
+nav, article, footer, .secondary {
   background-color: white;
 }
 
@@ -63,28 +63,27 @@ article {
   margin-right: 10px;
 }
 
-div[class="nav"] {
+nav {
   height: 50px;
-  background-color: ff80ff;
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
 }
 
-div[class="nav"] ul {
+nav ul {
   padding: 0;
   list-style-type: none;
   flex: 2;
   display: flex;
 }
 
-div[class="nav"] li {
+nav li {
   display: inline;
   text-align: center;
   flex: 1;
 }
 
-div[class="nav"] a {
+nav a {
   display: inline-block;
   font-size: 2rem;
   text-transform: uppercase;
@@ -92,7 +91,7 @@ div[class="nav"] a {
   color: black;
 }
 
-div[class="nav"] .search {
+nav .search {
   flex: 1;
   display: flex;
   align-items: center;
@@ -181,11 +180,11 @@ audio {
   cursor: pointer;
 }
 
-.comments font[size="6"] {
+.comments h2 {
   font-size: 2rem;
 }
 
-.comments font[size="6"]:nth-of-type(2) {
+.comments h2:nth-of-type(2) {
   margin-bottom: 0;
 }
 
@@ -207,11 +206,6 @@ audio {
 .comment-form input {
   margin-left: 1rem;
   flex: 6;
-}
-
-.show-hide {
-  text-align: center;
-  width: 150px;
 }
 
 .comment-form input, .comment-form label, .show-hide {
